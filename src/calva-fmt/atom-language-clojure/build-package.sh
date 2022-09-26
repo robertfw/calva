@@ -46,8 +46,7 @@ elif [ "${CIRCLECI}" = "true" ]; then
     osx)
       curl -s -L "https://atom.io/download/mac?channel=${ATOM_CHANNEL}" \
         -H 'Accept: application/octet-stream' \
-        -o "atom.zip" \
-        -vvvvv
+        -o "atom.zip"
       mkdir -p /tmp/atom
       unzip -q atom.zip -d /tmp/atom
       if [ "${ATOM_CHANNEL}" = "stable" ]; then
@@ -72,7 +71,8 @@ elif [ "${CIRCLECI}" = "true" ]; then
       # Assume the build is on a Debian based image (Circle CI provided Linux images)
       curl -s -L "https://atom.io/download/deb?channel=${ATOM_CHANNEL}" \
         -H 'Accept: application/octet-stream' \
-        -o "atom-amd64.deb"
+        -o "atom-amd64.deb" \
+        -vvvvv
       sudo dpkg --install atom-amd64.deb || true
       sudo apt-get update
       sudo apt-get --fix-broken --assume-yes --quiet install
