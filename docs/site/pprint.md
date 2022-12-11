@@ -8,7 +8,7 @@ description: Prettiness is on by default and all your evaluation results will ge
 In Calva, pretty printing is a mode. Prettiness is on by default and all your evaluation results will get that treatment.
 
 !!! Note "You can also pretty print code on demand"
-    There is a command **Replace Current Form (or Selection) with Pretty Printed Form**. See [Clojure Formmatting](formatting.md#3-replace-current-form-or-selection-with-pretty-printed-form) for more on this.
+    There is a command **Replace Current Form (or Selection) with Pretty Printed Form**. See [Clojure Formatting](formatting.md#3-replace-current-form-or-selection-with-pretty-printed-form) for more on this.
 
 ## Toggle it
 
